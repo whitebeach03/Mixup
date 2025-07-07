@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: torch-uncertainty
+Version: 0.2.0
+License-File: LICENSE
+Requires-Dist: timm
+Requires-Dist: lightning[pytorch-extra]
+Requires-Dist: torchvision>=0.16
+Requires-Dist: tensorboard
+Requires-Dist: einops
+Requires-Dist: torchinfo
+Requires-Dist: scipy
+Requires-Dist: huggingface-hub
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib==3.5.2
+Requires-Dist: numpy<2
+Requires-Dist: opencv-python
+Requires-Dist: glest==0.0.1a0

@@ -33,6 +33,7 @@ model:
   loss: CrossEntropyLoss
   style: cifar
   mixtype: kernel_sim
+  # mixtype: kernel_warping
   mixmode: elem
   mixup_alpha: 1.
   warping: inverse_beta_cdf

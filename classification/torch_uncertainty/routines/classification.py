@@ -410,7 +410,7 @@ class ClassificationRoutine(LightningModule):
     ) -> STEP_OUTPUT:
         # Mixup only for single models
         if self.num_estimators == 1:
-            if self.mixtype == "kernel_warping":
+            if self.mixtype == "kernel_warping" or self.mixtype == "kernel_sim":
                 if self.dist_sim == "emb":
                     with torch.no_grad():
                         feats = self.model.feats_forward(batch[0]).detach()

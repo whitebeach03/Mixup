@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+torch_uncertainty/__init__.py
+torch_uncertainty/losses.py
+torch_uncertainty/optim_recipes.py
+torch_uncertainty.egg-info/PKG-INFO
+torch_uncertainty.egg-info/SOURCES.txt
+torch_uncertainty.egg-info/dependency_links.txt
+torch_uncertainty.egg-info/requires.txt
+torch_uncertainty.egg-info/top_level.txt

@@ -3,8 +3,16 @@ import shutil
 import sys
 from typing import Any
 
+# Lightning のバージョンによってパスが異なるので複数候補を試す
+try:
+    from lightning.pytorch.loops.evaluation_loop import _EvaluationLoop
+except ImportError:
+    try:
+        from pytorch_lightning.loops.evaluation_loop import _EvaluationLoop
+    except ImportError:
+        from pytorch_lightning.loops.evaluation.evaluation_loop import _EvaluationLoop
+
 from lightning.pytorch.callbacks.progress.rich_progress import _RICH_AVAILABLE
-from lightning.pytorch.loops.evaluation_loop import _EvaluationLoop
 from lightning.pytorch.trainer.connectors.logger_connector.result import (
     _OUT_DICT,
 )

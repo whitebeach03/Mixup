@@ -301,7 +301,7 @@ class ResNetBaseline(ClassificationRoutine):
             mixtype=mixtype,
             mixmode=mixmode,
             dist_sim=dist_sim,
-            dist=dist,
+            # dist=dist,
             warping=warping,
             kernel_tau_max=kernel_tau_max,
             kernel_tau_std=kernel_tau_std,

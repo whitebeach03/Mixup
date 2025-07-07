@@ -104,20 +104,36 @@ class TULightningCLI(LightningCLI):
             eval_after_fit_default (bool, optional): _description_. Defaults to False.
         """
         self.eval_after_fit_default = eval_after_fit_default
+        # super().__init__(
+        #     model_class,
+        #     datamodule_class,
+        #     save_config_callback,
+        #     save_config_kwargs,
+        #     trainer_class,
+        #     trainer_defaults,
+        #     seed_everything_default,
+        #     parser_kwargs,
+        #     subclass_mode_model,
+        #     subclass_mode_data,
+        #     args,
+        #     run,
+        #     auto_configure_optimizers,
+        # )
         super().__init__(
-            model_class,
-            datamodule_class,
-            save_config_callback,
-            save_config_kwargs,
-            trainer_class,
-            trainer_defaults,
-            seed_everything_default,
-            parser_kwargs,
-            subclass_mode_model,
-            subclass_mode_data,
-            args,
-            run,
-            auto_configure_optimizers,
+            model_class=model_class,
+            datamodule_class=datamodule_class,
+            save_config_callback=save_config_callback,
+            save_config_kwargs=save_config_kwargs,
+            trainer_class=trainer_class,
+            trainer_defaults=trainer_defaults,
+            seed_everything_default=seed_everything_default,
+            # leave parser_class alone (so it uses LightningCLI’s default)
+            parser_kwargs=parser_kwargs,
+            subclass_mode_model=subclass_mode_model,
+            subclass_mode_data=subclass_mode_data,
+            args=args,
+            run=run,
+            auto_configure_optimizers=auto_configure_optimizers,
         )
 
     def add_default_arguments_to_parser(

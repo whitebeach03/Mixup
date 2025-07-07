@@ -1,5 +1,5 @@
 Metadata-Version: 2.1
-Name: torch-uncertainty
+Name: torch_uncertainty
 Version: 0.2.0
 License-File: LICENSE
 Requires-Dist: timm

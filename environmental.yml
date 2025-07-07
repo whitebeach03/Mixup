@@ -1,0 +1,8 @@
+name: venv
+channels:
+  - defaults
+dependencies:
+  - numpy
+  - tqdm
+  - tk
+prefix: /home/shirahama/anaconda3/envs/venv
